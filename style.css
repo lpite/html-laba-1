@@ -110,11 +110,120 @@ p {
   transform: translate(-50%, -36%);
 }
 
-
-.section_2{
-  margin: 50px 0;
+.section_2 {
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
+.section_2__caption {
+  opacity: 0.6;
+  font-size: 18pt;
+  color: #273d46;
+}
+
+.section_2__heading {
+  font-size: 36px;
+}
+
+.section_2__photo {
+}
 .section_2__text {
-  
+  font-size: 24px;
+  width: 650px;
+}
+.video_section {
+  margin: 0 auto;
+  width: 99%;
+  height: 100vh;
+  display: block;
+  aspect-ratio: 16/9;
+}
+.section_3 {
+  margin: 100px auto;
+  width: 70%;
+  display: flex;
+  position: relative;
+}
+
+.section_3__heading {
+  font-size: 36px;
+}
+
+.section_3__caption {
+  opacity: 0.6;
+  font-size: 18pt;
+  color: #273d46;
+}
+.section_3__photo {
+  height: 250px;
+  width: 470px;
+  background-color: gray;
+  border: 10px solid white;
+  box-shadow: 0px 10px 60px rgba(73, 75, 75, 0.54);
+  margin: 0 60px;
+}
+.section_3__author {
+  font-size: 14px;
+  color: gray;
+  font-weight: bold;
+}
+
+.section_2__floating_text {
+  position: absolute;
+  background-color: white;
+  top: 180px;
+  right: 400px;
+  padding: 25px;
+  box-shadow: 0px 10px 60px rgba(73, 75, 75, 0.54);
+}
+
+.section_4 {
+  /* padding: 30px 50px; */
+  margin: 300px auto;
+  margin-bottom: 0;
+  height: 70vh;
+  width: 100%;
+  background-image: url("images/dota2_social.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section_4 .form {
+  background-color: #273d467e;
+  height: 500px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section_4 .form__caption {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: white;
+}
+.form input{
+  padding: 8px 10px;
+  background-color: #2e3e42;
+  border: 2px solid gray;
+  border-radius: 20px;
+  height: 25px;
+  width: 200px;
+  color: white;
+}
+
+.form button{
+  background-color: #7fb7b3;
+  border: none;
+  padding:10px 55px;
+  border-radius: 20px;
+  margin: 40px 0;
 }
