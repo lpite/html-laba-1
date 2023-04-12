@@ -89,3 +89,32 @@ p {
   color: #ffffff;
   font-weight: 500;
 }
+.section_1 {
+  display: flex;
+}
+.section_image {
+  height: 573px;
+  width: 860px;
+  margin-left: 300px;
+}
+.section_image_small {
+  height: 248px;
+  width: 373px;
+  background-color: #d6b29c;
+  display: block;
+  position: absolute;
+  border: 10px solid white;
+  box-shadow: 0px 10px 60px rgba(73, 75, 75, 0.54);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -36%);
+}
+
+
+.section_2{
+  margin: 50px 0;
+}
+
+.section_2__text {
+  
+}
