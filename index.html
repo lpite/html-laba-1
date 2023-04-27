@@ -80,18 +80,37 @@
         </div>
       </section>
       <section class="section_4">
-        <form action="https://google.com/search" class="form">
+        <form action="https://google.com/search" class="form" id="subscription_form">
           <span class="form__caption">
             Like what you're reading? Get weekly updates that <br />
             will help you grow as a designer.
           </span>
           <div>
-            <input name="q" type="text" placeholder="NAME" />
-            <input type="email" placeholder="EMAIL" />
+            <input name="name" type="text" placeholder="NAME" id="name_input" />
+            <input name="email" type="email" placeholder="EMAIL" id="email_input"/>
           </div>
           <button>SUBSCRIBE</button>
         </form>
       </section>
     </main>
+    <script>
+      const form = document.getElementById("subscription_form");
+      const nameInput = document.getElementById("name_input");
+      const emailInput = document.getElementById("email_input");
+      form.addEventListener("submit",(e)=>{
+        e.preventDefault()
+        fetch("/subscribe.php",{
+          method:"POST",
+          body:JSON.stringify({name:nameInput.value,email:emailInput.value}),
+          headers: {
+            "Content-Type": "application/json",
+          }
+        }).then(()=>{
+          alert("Success")
+        }).catch(()=>{
+          alert("Something went wrong")
+        })
+      })
+    </script>
   </body>
 </html>
