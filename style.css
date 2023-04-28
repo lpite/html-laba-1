@@ -1,10 +1,12 @@
 * {
   text-decoration: none;
 }
+
 html,
 body {
   margin: 0;
 }
+
 .header {
   height: 120px;
   width: 80%;
@@ -28,6 +30,7 @@ body {
   left: 50%;
   transform: translate(-50%);
 }
+
 .big_text {
   opacity: 0.102;
   font-size: 189px;
@@ -40,11 +43,13 @@ body {
   left: 50%;
   transform: translate(-50%);
 }
+
 .menu_button {
   background-color: transparent;
   border: none;
   width: 50px;
 }
+
 .line {
   width: 100%;
   height: 8px;
@@ -53,6 +58,7 @@ body {
   display: block;
   border-radius: 10px;
 }
+
 section {
   margin: 0 auto;
   width: 80%;
@@ -64,6 +70,7 @@ h1 {
   margin: 15px 0;
   width: 500px;
 }
+
 p {
   width: 500px;
   font-size: 24px;
@@ -71,11 +78,13 @@ p {
   color: #273d46;
   font-weight: 400;
 }
+
 .text_section {
   opacity: 0.6;
   font-size: 18pt;
   color: #273d46;
 }
+
 .link {
   height: 55px;
   width: 200px;
@@ -89,14 +98,17 @@ p {
   color: #ffffff;
   font-weight: 500;
 }
+
 .section_1 {
   display: flex;
 }
+
 .section_image {
   height: 573px;
   width: 860px;
   margin-left: 300px;
 }
+
 .section_image_small {
   height: 248px;
   width: 373px;
@@ -128,12 +140,11 @@ p {
   font-size: 36px;
 }
 
-.section_2__photo {
-}
 .section_2__text {
   font-size: 24px;
   width: 650px;
 }
+
 .video_section {
   margin: 0 auto;
   width: 99%;
@@ -141,6 +152,7 @@ p {
   display: block;
   aspect-ratio: 16/9;
 }
+
 .section_3 {
   margin: 100px auto;
   width: 70%;
@@ -157,6 +169,7 @@ p {
   font-size: 18pt;
   color: #273d46;
 }
+
 .section_3__photo {
   height: 250px;
   width: 470px;
@@ -165,6 +178,7 @@ p {
   box-shadow: 0px 10px 60px rgba(73, 75, 75, 0.54);
   margin: 0 60px;
 }
+
 .section_3__author {
   font-size: 14px;
   color: gray;
@@ -181,7 +195,6 @@ p {
 }
 
 .section_4 {
-  /* padding: 30px 50px; */
   margin: 300px auto;
   margin-bottom: 0;
   height: 70vh;
@@ -210,7 +223,8 @@ p {
   margin-bottom: 30px;
   color: white;
 }
-.form input{
+
+.form input {
   padding: 8px 10px;
   background-color: #2e3e42;
   border: 2px solid gray;
@@ -220,10 +234,68 @@ p {
   color: white;
 }
 
-.form button{
+.form button {
   background-color: #7fb7b3;
   border: none;
-  padding:10px 55px;
+  padding: 10px 55px;
   border-radius: 20px;
   margin: 40px 0;
+}
+
+
+
+/* lab 7-8 */
+
+.section_heading {
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.section_heading::before{
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: black;
+  top: calc(50% - 5px);
+  left: -18px;
+  position: absolute;
+}
+
+.section_about_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.section_about_1 .i_am {
+  font-size: 18pt;
+  color: gray;
+}
+
+.section_about_1 .name {
+  font-size: 28pt;
+}
+
+.section_about_1 .short_text {
+  font-size: 14pt;
+  width: 400px;
+}
+.section_about_1 a{
+  border: 2px solid gray;
+  border-radius: 2px;
+  text-align: center;
+  padding: 8px 140px;
+  text-decoration: none;
+  color: gray;
+  transition: 0.1s ease-in-out;
+
+}
+
+.section_about_1 a:hover{
+  background-color: gray;
+  color: white;
+  transition: 0.1s ease-in-out;
 }
