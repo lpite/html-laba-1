@@ -63,7 +63,6 @@ section {
   margin: 0 auto;
   width: 80%;
 }
-
 h1 {
   font-size: 36px;
   line-height: 50px;
@@ -121,7 +120,6 @@ p {
   left: 50%;
   transform: translate(-50%, -36%);
 }
-
 .section_2 {
   margin: 50px auto;
   display: flex;
@@ -129,17 +127,14 @@ p {
   justify-content: center;
   flex-direction: column;
 }
-
 .section_2__caption {
   opacity: 0.6;
   font-size: 18pt;
   color: #273d46;
 }
-
 .section_2__heading {
   font-size: 36px;
 }
-
 .section_2__text {
   font-size: 24px;
   width: 650px;
@@ -159,11 +154,9 @@ p {
   display: flex;
   position: relative;
 }
-
 .section_3__heading {
   font-size: 36px;
 }
-
 .section_3__caption {
   opacity: 0.6;
   font-size: 18pt;
@@ -184,7 +177,6 @@ p {
   color: gray;
   font-weight: bold;
 }
-
 .section_2__floating_text {
   position: absolute;
   background-color: white;
@@ -193,7 +185,6 @@ p {
   padding: 25px;
   box-shadow: 0px 10px 60px rgba(73, 75, 75, 0.54);
 }
-
 .section_4 {
   margin: 300px auto;
   margin-bottom: 0;
@@ -206,7 +197,6 @@ p {
   align-items: center;
   justify-content: center;
 }
-
 .section_4 .form {
   background-color: #273d467e;
   height: 500px;
@@ -216,7 +206,6 @@ p {
   align-items: center;
   justify-content: center;
 }
-
 .section_4 .form__caption {
   font-size: 16px;
   font-weight: bold;
